@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{%block title%}QIT|Home{%endblock title%}
+{%block content%}
+<!-- Add your content here -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="banner">
+        <div class="banner-text">
+          <h1 class="heading-blue">Coding in Various Languages</h1>
+          <p>Explore the world of coding with languages like Python, Java, JavaScript, Flutter, and more.</p>
+        </div>
+        <div class="banner-photo">
+          <img src="{{ url_for('static', filename='laptop.jpeg') }}" alt="Coding Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="banner">
+        <div class="banner-text">
+          <h1 class="heading-green">Electronics and Embedded Systems</h1>
+          <p>Dive into the exciting field of electronics and embedded systems for building innovative hardware projects.</p>
+        </div>
+        <div class="banner-photo">
+          <img src="{{ url_for('static', filename='pcb.jpg') }}" alt="Electronics Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="banner">
+        <div class="banner-text">
+          <h1 class="heading-purple">Artificial Intelligence</h1>
+          <p>Discover the possibilities of Artificial Intelligence and its impact on various industries and applications.</p>
+        </div>
+        <div class="banner-photo">
+          <img src="{{ url_for('static', filename='ai.jpg') }}" alt="AI Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="banner">
+        <div class="banner-text">
+          <h1 class="heading-orange">Quantum Doctor: Revolutionizing Healthcare</h1>
+          <p>Experience the future of healthcare with Quantum Doctor, a groundbreaking product for medical health prediction, recommendations, and guidance.</p>
+        </div>
+        <div class="banner-photo">
+          <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Quantum Doctor Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  
+  <!--cards-->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Meet Our Team</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='jon.jpeg') }}" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Igata John</h5>
+              <p class="card-text">CEO/Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='francis.jpg') }}" class="card-img-top" alt="Team Member 2">
+            <div class="card-body">
+              <h5 class="card-title">Victor Ndubuisi</h5>
+              <p class="card-text">Embedded Systems</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='unekwu.jpeg') }}" class="card-img-top" alt="Team Member 3">
+            <div class="card-body">
+              <h5 class="card-title">Martha Unekwu</h5>
+              <p class="card-text">Software Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--sevices-->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='web.jpg') }}" class="card-img-top" alt="Service 1">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">We create responsive and user-friendly websites using the latest technologies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='mobile.jpg') }}" class="card-img-top" alt="Service 2">
+            <div class="card-body">
+              <h5 class="card-title">Mobile App Development</h5>
+              <p class="card-text">We build native and cross-platform mobile applications for iOS and Android devices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='ecommerce.jpg') }}" class="card-img-top" alt="Service 3">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Solutions</h5>
+              <p class="card-text">We create online stores with secure payment gateways and intuitive shopping experiences.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--end services-->
+  <!--testimonies-->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title text-center">Testimonials</h2><hr><br><br>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial">
+            <div class="testimonial-img">
+              <img src="{{ url_for('static', filename='bill.avif') }}" alt="Testimonial Image" class="img-fluid">
+            </div>
+            <div class="testimonial-text">
+              <p>"I had an amazing experience using Quantum Doctor. The device helped me monitor my health easily and accurately. The AI-powered analysis provided valuable insights and recommendations. Highly recommended!"</p>
+              <h4>Muayyat Billa</h4>
+              <span><i>CEO, Insolify</i></span><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial">
+            <div class="testimonial-img">
+              <img src="{{ url_for('static', filename='isaac.jpeg') }}" alt="Testimonial Image" class="img-fluid">
+            </div>
+            <div class="testimonial-text">
+              <p>"The game-changing technology is a 'WOW', it could relate with me in my local dialect, the algorithm is awesome, long live Quantum Doctor"</p>
+              <h4>Isaac Ariyo</h4>
+              <span><i>Managing Director, Zolant Diagnostic center</i></span><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial">
+            <div class="testimonial-img">
+              <img src="{{ url_for('static', filename='ada.jpg') }}" alt="Testimonial Image" class="img-fluid">
+            </div>
+            <div class="testimonial-text">
+              <p>"My Experience with Quantum Doctor has been awesome, the Device gave me accurate medical diagnosis and recommendations,The AI algorithm is awesome"</p>
+              <h4>Adah Adaga</h4>
+              <span><i>Medical Director, Alfad Specialist Hospital</i></span><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><hr><br><br>
+    
+  
+  <!--end testimonies-->
+  <section id="cta" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="mb-4">Ready to transform your IT infrastructure?</h2>
+          <p class="mb-4">We provide comprehensive IT solutions tailored to your needs. Whether you need software development, hardware implementation, or IT training, our expert team is here to help you achieve success.</p>
+          <a href="#" class="btn btn-light btn-lg">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="statistics" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-center">
+            <h3 class="mb-2">10+</h3>
+            <p class="mb-0">Years of Experience</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center">
+            <h3 class="mb-2">500+</h3>
+            <p class="mb-0">Satisfied Clients</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center">
+            <h3 class="mb-2">100%</h3>
+            <p class="mb-0">Customer Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {%endblock content%}

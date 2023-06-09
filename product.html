@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Quantum Doctor{% endblock title %}
+{% block content %}
+<section id="about_quantum_doctor">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Quantum Doctor</h2>
+          <p class="text-justify">Quantum Doctor is designed to disruptively change the way we look at personal health management through the use of Internet of things and Artificial Intelligence.</p>
+
+          <p class="text-justify">Working toward SDG Goal 3 which is to ensure health and well-being for all, including a bold commitment to end the epidemics of AIDS, tuberculosis, malaria, and other communicable diseases by 2030.</p>
+
+          <p class="text-justify">With the Quantum Doctor, users can easily and accurately monitor their health from the comfort of their own homes. The device's sensors collect data on various physiological parameters, such as heart rate, blood pressure, and body temperature. This data is then analyzed using AI algorithms to provide users with a comprehensive picture of their current health status.</p>
+          
+          <p class="text-justify">The Quantum Doctor doesn't just stop at providing a diagnosis - it also uses the data it collects to predict users' future health status. By analyzing trends and patterns in the data, the Quantum Doctor can provide users with valuable insights and recommendations for maintaining and improving their health.</p>
+          
+          <p class="text-justify">The Quantum Doctor is a game-changing technology that has the potential to revolutionize the way we approach healthcare. With its advanced sensor technology and AI capabilities, it offers a convenient and cost-effective solution for monitoring and maintaining our health.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Placeholder Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
